@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="QA portfolio — системный анализ, тест-дизайн и quality engineering." />
+    <title>QA Engineer — портфолио</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="topbar shell">
+      <a class="brand" href="#top" aria-label="На главную"><span class="brand-mark">AV</span><span>QA / portfolio</span></a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#case">Кейс</a><a href="#approach">Подход</a><a href="#artifacts">Артефакты</a>
+      </nav>
+      <a class="button button-small button-outline" href="mailto:hello@example.com">Связаться <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> Открыт к новым задачам <span class="mono">/ 2026</span></div>
+          <h1>Тестирую не только<br /><em>фичи, но и риски.</em></h1>
+          <p class="hero-lead">QA-инженер, который превращает неясные требования в проверяемые сценарии, а системные риски — в решения, понятные всей команде.</p>
+          <div class="hero-actions"><a class="button" href="#case">Смотреть кейс <span>↓</span></a><a class="text-link" href="#artifacts">Все материалы <span>↗</span></a></div>
+        </div>
+        <div class="hero-visual" aria-label="Панель quality signal">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="signal-card">
+            <div class="signal-top"><span class="mono">QUALITY SIGNAL</span><span class="live"><i></i> LIVE</span></div>
+            <div class="signal-score">94<span>/100</span></div>
+            <div class="signal-label">coverage confidence</div>
+            <div class="signal-bars"><span style="height:52%"></span><span style="height:72%"></span><span style="height:61%"></span><span style="height:89%"></span><span style="height:76%"></span><span style="height:100%"></span><span style="height:84%"></span><span style="height:94%"></span><span style="height:90%"></span><span style="height:100%"></span></div>
+            <div class="signal-foot"><span>risk mapped</span><strong>26 checks</strong></div>
+          </div>
+          <span class="float-label label-a">edge cases first</span><span class="float-label label-b">reproducible</span>
+        </div>
+      </section>
+
+      <section class="metrics shell" aria-label="Ключевые показатели портфолио">
+        <div><strong>01</strong><span>системный кейс<br />от идеи до API</span></div><div><strong>26</strong><span>приёмочных<br />сценариев</span></div><div><strong>05</strong><span>типов QA-артефактов<br />в одном репозитории</span></div><div><strong>∞</strong><span>внимания к<br />деталям</span></div>
+      </section>
+
+      <section class="section shell" id="case">
+        <div class="section-heading"><div><p class="kicker">01 / FEATURED CASE</p><h2>Slotly <span>— система, где<br />одна кнопка меняет всё.</span></h2></div><a class="text-link" href="https://github.com/Dimonstraci/appointment-system-analysis">Открыть репозиторий <span>↗</span></a></div>
+        <div class="case-grid">
+          <div class="case-intro"><div class="case-number">01</div><p>Аналитическая спецификация MVP для онлайн-записи на услуги. В центре — риск двойного бронирования при одновременных запросах.</p><div class="tag-row"><span>QA analysis</span><span>Test design</span><span>API</span></div></div>
+          <div class="case-flow"><div class="flow-line"></div><div class="flow-item"><span class="flow-index">01</span><div><b>Понять контекст</b><small>Цели, границы MVP, роли, допущения</small></div></div><div class="flow-item"><span class="flow-index">02</span><div><b>Сделать требования проверяемыми</b><small>FR/NFR, бизнес-правила, критерии приёмки</small></div></div><div class="flow-item"><span class="flow-index">03</span><div><b>Закрыть системный риск</b><small>Транзакция + ограничение БД + idempotency key</small></div></div></div>
+        </div>
+        <div class="case-highlight"><div class="quote-mark">“</div><div><p>Как гарантировать, что один слот не достанется двум клиентам, даже если они нажали «Записаться» одновременно?</p><span class="mono">THE QUESTION THAT SHAPED THE DESIGN</span></div><div class="highlight-code"><span>POST</span> /appointments<br /><i>→ 201 / 409</i></div></div>
+      </section>
+
+      <section class="section section-tint" id="approach"><div class="shell">
+        <div class="section-heading"><div><p class="kicker">02 / HOW I WORK</p><h2>Качество — это<br /><span>связи между слоями.</span></h2></div><p class="heading-note">От бизнес-цели до конкретного теста — каждый переход прозрачен и объясним.</p></div>
+        <div class="approach-grid"><article><span class="card-no">01</span><div class="icon">◎</div><h3>Декомпозирую</h3><p>Нахожу скрытые допущения, границы и места, где требование можно понять по-разному.</p><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/docs/02-requirements.md">Требования <span>↗</span></a></article><article><span class="card-no">02</span><div class="icon">⌁</div><h3>Моделирую</h3><p>Показываю процесс, состояния и данные так, чтобы команда увидела систему целиком.</p><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/docs/04-processes-and-uml.md">Модели <span>↗</span></a></article><article><span class="card-no">03</span><div class="icon">⊙</div><h3>Проверяю риски</h3><p>Сначала атакую конкуренцию, права доступа, идемпотентность и граничные даты.</p><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/docs/07-acceptance.md">Тесты <span>↗</span></a></article></div>
+      </div></section>
+
+      <section class="section shell" id="artifacts">
+        <div class="section-heading"><div><p class="kicker">03 / DELIVERABLES</p><h2>Артефакты, которые<br /><span>можно взять в работу.</span></h2></div></div>
+        <div class="artifact-list"><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/docs/01-business-context.md"><span class="artifact-index">A / 01</span><strong>Business context</strong><span class="artifact-desc">цели, scope, stakeholders</span><span class="arrow">↗</span></a><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/api/openapi.json"><span class="artifact-index">A / 02</span><strong>OpenAPI contract</strong><span class="artifact-desc">эндпоинты, схемы, ошибки</span><span class="arrow">↗</span></a><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/database/schema.sql"><span class="artifact-index">A / 03</span><strong>Data model & SQL</strong><span class="artifact-desc">DDL, ограничения, запросы</span><span class="arrow">↗</span></a><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/decisions/001-fixed-slots.md"><span class="artifact-index">A / 04</span><strong>Decision record</strong><span class="artifact-desc">почему fixed slots</span><span class="arrow">↗</span></a></div>
+      </section>
+
+      <section class="closing shell"><div><p class="kicker">LET'S MAKE IT RELIABLE</p><h2>Есть вопрос,<br /><em>который стоит проверить?</em></h2></div><a class="button" href="mailto:hello@example.com">Написать мне <span>↗</span></a></section>
+    </main>
+    <footer class="footer shell"><span>© 2026 QA Engineer</span><span class="mono">Built with curiosity & care</span><span>QA / analysis / systems</span></footer>
+  </body>
+</html>
