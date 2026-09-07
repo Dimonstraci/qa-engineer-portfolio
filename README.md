@@ -11,6 +11,6 @@
 
 ## Запуск
 
-Откройте `index.html` в браузере или опубликуйте репозиторий через GitHub Pages.
+Откройте `index.html` в браузере. Сайт также опубликован через GitHub Pages.
 
 Основные материалы кейса: [appointment-system-analysis](https://github.com/Dimonstraci/appointment-system-analysis).
