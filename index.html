@@ -15,7 +15,7 @@
     <header class="topbar shell">
       <a class="brand" href="#top" aria-label="На главную"><span class="brand-mark">AV</span><span>QA / portfolio</span></a>
       <nav class="nav" aria-label="Основная навигация">
-        <a href="#case">Кейс</a><a href="#approach">Подход</a><a href="#artifacts">Артефакты</a>
+        <a href="#case">Кейс</a><a href="#grib-test">Гриб-тест</a><a href="#phenotyping">Фенотипирование</a><a href="#approach">Подход</a><a href="#artifacts">Артефакты</a>
       </nav>
       <a class="button button-small button-outline" href="mailto:hello@example.com">Связаться <span>↗</span></a>
     </header>
@@ -32,17 +32,17 @@
           <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
           <div class="signal-card">
             <div class="signal-top"><span class="mono">QUALITY SIGNAL</span><span class="live"><i></i> LIVE</span></div>
-            <div class="signal-score">94<span>/100</span></div>
-            <div class="signal-label">coverage confidence</div>
+            <div class="signal-score">24<span>/24</span></div>
+            <div class="signal-label">autotests passed</div>
             <div class="signal-bars"><span style="height:52%"></span><span style="height:72%"></span><span style="height:61%"></span><span style="height:89%"></span><span style="height:76%"></span><span style="height:100%"></span><span style="height:84%"></span><span style="height:94%"></span><span style="height:90%"></span><span style="height:100%"></span></div>
-            <div class="signal-foot"><span>risk mapped</span><strong>26 checks</strong></div>
+            <div class="signal-foot"><span>demo stand</span><strong>30 manual checks</strong></div>
           </div>
           <span class="float-label label-a">edge cases first</span><span class="float-label label-b">reproducible</span>
         </div>
       </section>
 
       <section class="metrics shell" aria-label="Ключевые показатели портфолио">
-        <div><strong>01</strong><span>системный кейс<br />от идеи до API</span></div><div><strong>26</strong><span>приёмочных<br />сценариев</span></div><div><strong>05</strong><span>типов QA-артефактов<br />в одном репозитории</span></div><div><strong>∞</strong><span>внимания к<br />деталям</span></div>
+        <div><strong>30</strong><span>ручных<br />тест-кейсов</span></div><div><strong>06</strong><span>тестовых<br />сценариев</span></div><div><strong>24</strong><span>автотеста<br />xUnit</span></div><div><strong>100%</strong><span>автотестов<br />пройдено</span></div>
       </section>
 
       <section class="section shell" id="case">
@@ -54,13 +54,31 @@
         <div class="case-highlight"><div class="quote-mark">“</div><div><p>Как гарантировать, что один слот не достанется двум клиентам, даже если они нажали «Записаться» одновременно?</p><span class="mono">THE QUESTION THAT SHAPED THE DESIGN</span></div><div class="highlight-code"><span>POST</span> /appointments<br /><i>→ 201 / 409</i></div></div>
       </section>
 
+      <section class="section shell" id="grib-test">
+        <div class="section-heading"><div><p class="kicker">02 / DEMO TEST STAND</p><h2>Гриб-тест <span>— сила хвата<br />в данных и графиках.</span></h2></div><a class="text-link" href="https://github.com/Dimonstraci/qa-engineer-portfolio/tree/main/projects/grib-test">Исходники и тесты <span>↗</span></a></div>
+        <div class="case-grid">
+          <div class="case-intro"><div class="case-number">02</div><p>Лабораторное ПО для оценки силы хвата мышей. Приложение считывает показания подключённого устройства, отображает силу во времени и сохраняет результаты в CSV для дальнейшего анализа.</p><div class="tag-row"><span>WPF</span><span>COM-port</span><span>CSV</span><span>xUnit</span></div></div>
+          <div class="case-flow"><div class="flow-line"></div><div class="flow-item"><span class="flow-index">01</span><div><b>Принять показания</b><small>Числовые данные поступают с устройства через COM-порт.</small></div></div><div class="flow-item"><span class="flow-index">02</span><div><b>Показать измерение</b><small>Значения строятся на графике «сила - время» с ограниченной историей.</small></div></div><div class="flow-item"><span class="flow-index">03</span><div><b>Сохранить результат</b><small>Сеанс выгружается в CSV с временной меткой и значением силы.</small></div></div></div>
+        </div>
+        <div class="case-highlight"><div class="quote-mark">“</div><div><p>Что произойдёт, если устройство передаст некорректное значение, поток данных оборвётся или история измерений переполнится?</p><span class="mono">30 MANUAL TEST CASES · 6 SCENARIOS · 24 XUNIT TESTS</span></div><div class="highlight-code"><span>INPUT</span> COM data<br /><i>→ chart / CSV / log</i></div></div>
+      </section>
+
+      <section class="section shell" id="phenotyping">
+        <div class="section-heading"><div><p class="kicker">03 / R&amp;D SYSTEM</p><h2>Фенотипирование <span>— масштабируемая<br />экспериментальная система.</span></h2></div><span class="mono">COM / I2C / ARDUINO</span></div>
+        <div class="case-grid">
+          <div class="case-intro"><div class="case-number">03</div><p>Технология для исследования когнитивных способностей мелких лабораторных животных. Система объединяет компьютерное ПО, ведущее устройство и сеть ведомых модулей для проведения эксперимента и регистрации результатов.</p><div class="tag-row"><span>Flutter</span><span>ATmega328P</span><span>Arduino Nano</span><span>I2C</span></div></div>
+          <div class="case-flow"><div class="flow-line"></div><div class="flow-item"><span class="flow-index">01</span><div><b>Настроить эксперимент</b><small>Компьютерная программа передаёт команды и протокол исследования.</small></div></div><div class="flow-item"><span class="flow-index">02</span><div><b>Связать модули</b><small>Master подключён к ПК по COM и адресует slave-устройства по шине I2C.</small></div></div><div class="flow-item"><span class="flow-index">03</span><div><b>Получить результат</b><small>Данные накапливаются, визуализируются и сохраняются для анализа.</small></div></div></div>
+        </div>
+        <div class="case-highlight"><div class="quote-mark">“</div><div><p>Система реализована на стенде из одного ведущего и четырёх ведомых устройств и поддерживает режимы обучения и эксперимента.</p><span class="mono">RESEARCH SOFTWARE · DISTRIBUTED EMBEDDED SYSTEM</span></div><div class="highlight-code"><span>PC</span> → master<br /><i>→ I2C slave network</i></div></div>
+      </section>
+
       <section class="section section-tint" id="approach"><div class="shell">
-        <div class="section-heading"><div><p class="kicker">02 / HOW I WORK</p><h2>Качество — это<br /><span>связи между слоями.</span></h2></div><p class="heading-note">От бизнес-цели до конкретного теста — каждый переход прозрачен и объясним.</p></div>
+        <div class="section-heading"><div><p class="kicker">04 / HOW I WORK</p><h2>Качество — это<br /><span>связи между слоями.</span></h2></div><p class="heading-note">От бизнес-цели до конкретного теста — каждый переход прозрачен и объясним.</p></div>
         <div class="approach-grid"><article><span class="card-no">01</span><div class="icon">◎</div><h3>Декомпозирую</h3><p>Нахожу скрытые допущения, границы и места, где требование можно понять по-разному.</p><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/docs/02-requirements.md">Требования <span>↗</span></a></article><article><span class="card-no">02</span><div class="icon">⌁</div><h3>Моделирую</h3><p>Показываю процесс, состояния и данные так, чтобы команда увидела систему целиком.</p><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/docs/04-processes-and-uml.md">Модели <span>↗</span></a></article><article><span class="card-no">03</span><div class="icon">⊙</div><h3>Проверяю риски</h3><p>Сначала атакую конкуренцию, права доступа, идемпотентность и граничные даты.</p><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/docs/07-acceptance.md">Тесты <span>↗</span></a></article></div>
       </div></section>
 
       <section class="section shell" id="artifacts">
-        <div class="section-heading"><div><p class="kicker">03 / DELIVERABLES</p><h2>Артефакты, которые<br /><span>можно взять в работу.</span></h2></div></div>
+        <div class="section-heading"><div><p class="kicker">05 / DELIVERABLES</p><h2>Артефакты, которые<br /><span>можно взять в работу.</span></h2></div></div>
         <div class="artifact-list"><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/docs/01-business-context.md"><span class="artifact-index">A / 01</span><strong>Business context</strong><span class="artifact-desc">цели, scope, stakeholders</span><span class="arrow">↗</span></a><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/api/openapi.json"><span class="artifact-index">A / 02</span><strong>OpenAPI contract</strong><span class="artifact-desc">эндпоинты, схемы, ошибки</span><span class="arrow">↗</span></a><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/database/schema.sql"><span class="artifact-index">A / 03</span><strong>Data model & SQL</strong><span class="artifact-desc">DDL, ограничения, запросы</span><span class="arrow">↗</span></a><a href="https://github.com/Dimonstraci/appointment-system-analysis/blob/main/decisions/001-fixed-slots.md"><span class="artifact-index">A / 04</span><strong>Decision record</strong><span class="artifact-desc">почему fixed slots</span><span class="arrow">↗</span></a></div>
       </section>
 
