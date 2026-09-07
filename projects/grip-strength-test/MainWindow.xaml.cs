@@ -35,7 +35,7 @@ namespace ArduinoDataLogger
             {
                 new LineSeries
                 {
-                    Title = "Данные с Arduino",
+                    Title = "Сила хвата",
                     Values = new ChartValues<ObservablePoint>(),
                     PointGeometry = null,
                     LineSmoothness = 0
@@ -222,7 +222,7 @@ namespace ArduinoDataLogger
         {
             try
             {
-                string filename = $"arduino_data_{DateTime.Now:yyyyMMdd_HHmmss}.csv";
+                string filename = $"grip_strength_data_{DateTime.Now:yyyyMMdd_HHmmss}.csv";
                 File.WriteAllLines(filename, MeasurementCsvExporter.CreateLines(_measurements.Snapshot()));
                 Log($"Данные сохранены в {filename}");
             }
@@ -240,7 +240,7 @@ namespace ArduinoDataLogger
                 {
                     Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*",
                     DefaultExt = ".csv",
-                    FileName = $"arduino_data_{DateTime.Now:yyyyMMdd_HHmmss}.csv"
+                    FileName = $"grip_strength_data_{DateTime.Now:yyyyMMdd_HHmmss}.csv"
                 };
 
                 if (saveFileDialog.ShowDialog() == true)
