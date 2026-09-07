@@ -13,6 +13,6 @@
 
 ## Запуск
 
-Откройте `index.html` в браузере. Сайт также опубликован через GitHub Pages.
+Откройте `index.html` в браузере или перейдите на [сайт-портфолио](https://dimonstraci.github.io/qa-engineer-portfolio/).
 
 Основные материалы кейса: [appointment-system-analysis](https://github.com/Dimonstraci/appointment-system-analysis).
